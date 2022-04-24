@@ -1,17 +1,17 @@
-var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
-var dni; 
-var letra; 
-var res; 
-dni = parseInt(prompt("Ingrese su dni: "));
-letra = prompt("Ingrese la letra de su dni");
-if(dni < 0 || dni > 99999999){
-    alert("El número ingresado no es válido");
-}else{
-    var res  ; 
-    res = letras[dni % 23];
-    if(res === letra ){
-        alert("La letra y el numero ingresado son correctos");
-    }else{
-        alert("La letra y el número no coinciden");
-    }
+var numero1 = 5;
+var numero2 = 8;
+
+if (!(numero1 > numero2)) {
+  alert("numero1 no es mayor que numero2");
+}
+if (numero2 >= 0) {
+  alert("numero2 es positivo");
+}
+if (numero1 < 0 || numero1 != 0) {
+  alert("numero1 es negativo o distinto de cero");
+}
+if (!(++numero1 >= numero2)) {
+  alert(
+    "Incrementar en 1 unidad el valor de numero1 no lo hace mayor o igual que numero2"
+  );
 }
