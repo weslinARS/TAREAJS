@@ -1,18 +1,17 @@
-var valores = [true, 5, false, "hola", "adios", 2];
-//inciso 1 
-res1 = valores[3] > valores[4];
-alert(res1);
-//inciso 2 
-restrue = valores[0] || valores[2];
-alert(restrue);
-resfalse = valores[0] && valores[2];
-alert(resfalse);
-//inciso 3 
-ressuma = valores[1] + valores[5];
-alert(ressuma);
-resresta = valores[1] - valores[5];
-alert(resresta);
-resmult = valores[1] * valores[5];
-alert(resmult);
-resdiv = valores[1] / valores[5];
-alert(resdiv);
+var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+var dni; 
+var letra; 
+var res; 
+dni = parseInt(prompt("Ingrese su dni: "));
+letra = prompt("Ingrese la letra de su dni");
+if(dni < 0 || dni > 99999999){
+    alert("El número ingresado no es válido");
+}else{
+    var res  ; 
+    res = letras[dni % 23];
+    if(res === letra ){
+        alert("La letra y el numero ingresado son correctos");
+    }else{
+        alert("La letra y el número no coinciden");
+    }
+}
